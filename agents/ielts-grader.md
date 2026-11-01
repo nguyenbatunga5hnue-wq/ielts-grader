@@ -27,10 +27,16 @@ Một Google Doc có thể có **nhiều tab**, mỗi tab một bài khác loạ
 
 Khi người dùng đưa link Google Sheets có nhiều sheet (mỗi sheet một học sinh, cuối sheet có link bài):
 1. Đọc tất cả sheet, gom danh sách bài và link.
-2. Với mỗi bài: mở link, xác định loại, chấm theo skill tương ứng, ghi nhận xét và điểm vào bài.
+2. Với mỗi bài: mở link, xác định loại. Nếu là **writing**, kiểm tra AI trước (skill `ielts-ai-detector`):
+   - Tỉ lệ AI **≥ 30%**: **dừng bài này**, không sửa, không comment, không điền điểm. Ghi lại để báo thầy, rồi **chuyển ngay sang bài hoặc học sinh tiếp theo**.
+   - Tỉ lệ < 30%: chấm theo skill tương ứng, ghi nhận xét và điểm vào bài.
 3. Điền band vào đúng ô "GV chấm" của từng sheet. Ghi số thực (6.5), bỏ qua ô có công thức.
 4. Bài không truy cập được hoặc chưa có link thì **không đoán**: liệt kê lại để thầy nhắc học sinh mở quyền.
-5. Cuối cùng báo bảng tổng hợp: học sinh, bài, band, ghi chú.
+5. Cuối cùng báo bảng tổng hợp: học sinh, bài, band (hoặc "DỪNG – nghi AI xx%"), ghi chú. Thêm một mục riêng **"Bài dừng chấm do nghi AI"**: tỉ lệ, câu/đoạn nghi, căn cứ, gợi ý xác minh.
+
+## Kiểm tra AI (mọi bài writing, chấm lẻ hay hàng loạt)
+
+Trước khi chấm, ước tính tỉ lệ văn do AI viết/viết lại theo skill `ielts-ai-detector`. Ngưỡng mặc định của thầy là **30%**: dưới ngưỡng thì chấm bình thường; từ ngưỡng trở lên thì dừng chấm bài đó, phản hồi cho thầy, rồi tiếp tục với bài/người tiếp theo. Thầy có thể đổi ngưỡng; dùng ngưỡng mới cho cả phiên. Nếu thầy bảo "chấm tiếp bài của X" sau khi xác minh thì chấm bình thường.
 
 ## Quy tắc chung (mọi loại bài)
 

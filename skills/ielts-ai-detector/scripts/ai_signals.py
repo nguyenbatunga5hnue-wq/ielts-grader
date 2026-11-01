@@ -17,8 +17,7 @@ cornerstone catalyst trajectory paradigm discourse bustling vibrant enhance enha
 AI_PHRASES = ["in today's fast-paced world", "in today's world", "in today's society", "in the modern era",
     "in an era of", "in an increasingly", "it is important to note", "it is worth noting", "it is crucial to",
     "it is imperative", "plays a crucial role", "plays a pivotal role", "plays a vital role", "a double-edged sword",
-    "on the one hand", "striking a balance", "strike a balance", "a delicate balance", "a wide range of",
-    "a myriad of", "a plethora of", "serves as a", "not only", "paving the way", "pave the way",
+    "striking a balance", "strike a balance", "a delicate balance", "a myriad of", "a plethora of", "serves as a", "paving the way", "pave the way",
     "in conclusion, while", "ultimately,", "furthermore,", "moreover,", "additionally,", "consequently,",
     "by doing so", "this, in turn", "in turn,", "foster a sense of", "sense of community", "well-being",
     "holistic approach", "multifaceted approach", "collective effort", "shared responsibility",
@@ -83,6 +82,26 @@ def metrics(text):
         out["non_dictionary_words (lỗi chính tả?)"] = sorted({w for w in ws if len(w) > 2 and zf(w.lower(), "en") == 0})[:30]
     return out
 
+def sentence_scores(text):
+    """Điểm 'kiểu AI' cho từng câu -> ước tính % chữ có dấu hiệu AI (bản máy, Claude duyệt lại)."""
+    rows = []
+    for para_i, para in enumerate([p for p in re.split(r"\n+", text) if p.strip()]):
+        for s in sents(para):
+            low = s.lower(); ws = words(s)
+            aw = [w.lower() for w in ws if w.lower() in AI_WORDS]
+            ap = [p for p in AI_PHRASES if p in low]
+            conn = any(re.match(c + r"\b", low.strip()) for c in CONNECTORS[:5] + ["ultimately", "notably"])
+            score = len(aw) + 1.5 * len(ap) + 0.5 * conn + s.count("—") + 0.5 * bool(re.search(r"\w+, \w+(?: \w+)?,? and \w+", s))
+            rows.append({"para": para_i, "words": len(ws), "score": round(score, 1), "ai_like": score >= 1.5,
+                         "markers": aw + ap + (["connector đầu câu"] if conn else []), "text": s})
+    # làm mượt theo đoạn: đoạn có >=50% số chữ bị gắn nhãn -> tính cả đoạn
+    for pi in {r["para"] for r in rows}:
+        pr = [r for r in rows if r["para"] == pi]
+        if sum(r["words"] for r in pr if r["ai_like"]) >= 0.5 * sum(r["words"] for r in pr):
+            for r in pr: r["ai_like"] = True
+    tot = sum(r["words"] for r in rows) or 1
+    return rows, round(100 * sum(r["words"] for r in rows if r["ai_like"]) / tot)
+
 def flags(m):
     """Diễn giải thô. Ngưỡng là kinh nghiệm, không phải xác suất."""
     f = []
@@ -104,7 +123,8 @@ def main():
     ap.add_argument("text"); ap.add_argument("--baseline", nargs="*", default=[]); ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
     m = metrics(open(a.text, encoding="utf-8").read())
-    R = {"target": m, "flags": flags(m), "baseline": []}
+    rows, pct = sentence_scores(open(a.text, encoding="utf-8").read())
+    R = {"target": m, "flags": flags(m), "machine_ai_pct": pct, "sentences": rows, "baseline": []}
     for b in a.baseline:
         bm = metrics(open(b, encoding="utf-8").read())
         R["baseline"].append({"file": b, **{k: bm[k] for k in ["n_words", "sent_len_mean", "sent_len_cv", "mattr50",
@@ -115,6 +135,9 @@ def main():
     for k, v in m.items(): print(f"{k}: {v}")
     print("\n== CỜ (dấu hiệu, không phải kết luận) ==")
     for x in R["flags"] or ["(không có cờ nào)"]: print("- " + x)
+    print(f"\n== TỪNG CÂU (máy gắn nhãn sơ bộ; Claude duyệt lại) ==  ước tính máy: {pct}% số chữ có dấu hiệu AI")
+    for i, r in enumerate(rows):
+        print(f"[{i}] P{r['para']} {'AI?' if r['ai_like'] else '   '} s={r['score']} w={r['words']} {r['markers']} :: {r['text'][:110]}")
     if R["baseline"]:
         print("\n== SO VỚI BÀI CŨ CỦA CHÍNH HỌC SINH ==")
         keys = ["sent_len_mean", "sent_len_cv", "mattr50", "ai_words_per_100w", "connectors_per_sentence", "mean_zipf", "pct_rare_words_zipf_lt_3.5"]

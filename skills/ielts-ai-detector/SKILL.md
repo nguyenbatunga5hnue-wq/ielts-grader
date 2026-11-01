@@ -41,7 +41,30 @@ python3 <skill>/scripts/ai_signals.py bai.txt --baseline bai_cu1.txt bai_cu2.txt
 - **Lạc đề tinh vi**: AI hay trả lời một câu hỏi gần giống đề, ví dụ đề hỏi "to what extent do you agree" mà bài viết kiểu discussion.
 - **Dấu vết copy-paste**: em dash (—), ngoặc cong lẫn ngoặc thẳng, ký tự ẩn, markdown (`**`, `#`), font hoặc cỡ chữ khác giữa các đoạn (xem `textStyle` trong JSON của `read_doc`).
 
-### 4. Kết luận mức nghi ngờ
+### 4. Ước tính tỉ lệ AI (%) và áp ngưỡng của thầy
+
+**Định nghĩa:** tỉ lệ AI = % số chữ nằm trong các câu Claude kết luận là **AI viết hoặc AI viết lại** (không tính câu chỉ được sửa chính tả hay ngữ pháp lẻ tẻ).
+
+Cách tính:
+1. Script in ra từng câu kèm nhãn sơ bộ `AI?` và `ước tính máy: X%`. Đây chỉ là điểm xuất phát.
+2. Claude **duyệt lại từng câu**:
+   - **Bỏ nhãn** nếu marker chỉ là template lớp dạy (Moreover, On the other hand, In conclusion…), hoặc câu có lỗi kiểu người học Việt.
+   - **Thêm nhãn** cho câu không có marker nhưng hoàn hảo bất thường so với hồ sơ lỗi hoặc baseline của con, hoặc nằm trong đoạn có dấu vết dán (font khác, em dash, markdown).
+   - Đoạn mà phần lớn câu bị gắn nhãn và câu còn lại cùng giọng thì tính cả đoạn.
+3. Tỉ lệ = tổng số chữ của các câu có nhãn / tổng số chữ của bài, làm tròn đến 5%.
+
+**Ngưỡng (theo yêu cầu của thầy):**
+
+| Tỉ lệ | Hành động |
+|---|---|
+| **< 30%** | Chấm bình thường. Nếu 15–29% thì thêm một dòng ghi chú trong báo cáo cho thầy |
+| **≥ 30%** | **DỪNG chấm bài này**: không sửa, không comment trong doc, **không điền điểm** vào bảng (để trống ô GV chấm). Báo ngay cho thầy theo mẫu ở bước 6, rồi **chuyển sang học sinh/bài tiếp theo** |
+
+Khi đã kết luận ≥30%, không chấm "một phần" bài đó. Nếu thầy xác minh xong và bảo "chấm tiếp bài của X" thì chấm bình thường.
+
+Thầy có thể đổi ngưỡng (ví dụ "ngưỡng 40%"). Khi đó dùng ngưỡng mới cho cả phiên.
+
+### 5. Kết luận mức nghi ngờ
 
 | Mức | Khi nào |
 |---|---|
@@ -51,13 +74,15 @@ python3 <skill>/scripts/ai_signals.py bai.txt --baseline bai_cu1.txt bai_cu2.txt
 
 Không có baseline thì **tối đa là "Trung bình"**, trừ khi có dấu vết copy-paste rõ ràng (markdown, ký tự lạ).
 
-### 5. Báo cho thầy (trong chat)
+### 6. Báo cho thầy (trong chat)
 
 Mẫu:
 
 ```
 Bài: <tên học sinh> – <đề>
+Tỉ lệ AI ước tính: 45% (máy 50%, Claude duyệt lại) → ≥30%: ĐÃ DỪNG CHẤM, chưa ghi gì vào doc và bảng điểm
 Mức nghi ngờ: Trung bình – nghi AI sửa/paraphrase (ý và bố cục có vẻ của con, câu chữ bị "đánh bóng")
+Câu/đoạn nghi: body 1 toàn bộ; câu 2 của mở bài ("…")
 Căn cứ:
 1. <bằng chứng cụ thể, trích câu>
 2. ...
@@ -74,4 +99,11 @@ Giọng điệu khi đề xuất: trung lập, không buộc tội. Đây là th
 
 ## Khi đang chấm bài (dùng cùng skill writing)
 
-Không cần chạy đầy đủ cho mọi bài. Khi chấm, nếu thấy bài bất thường (không lỗi mà quá "sang", lệch hẳn bài trước của con, có dấu vết dán), chạy nhanh `ai_signals.py` và thêm **một dòng** vào báo cáo cho thầy, ví dụ "⚠️ Bài của X: nghi AI mức Trung bình, xem chi tiết?". **Vẫn chấm bài bình thường**, không trừ điểm vì nghi ngờ, không ghi gì về AI vào doc.
+**Mọi bài writing đều phải qua bước kiểm tra AI TRƯỚC khi chấm**, cả khi chấm lẻ lẫn chấm hàng loạt:
+
+1. Lấy văn bản gốc, chạy `ai_signals.py` (có baseline nếu có), duyệt nhãn từng câu, tính tỉ lệ AI.
+2. Nếu < 30%: chấm bình thường theo skill writing. **Không** ghi gì về AI vào doc.
+3. Nếu ≥ 30%: dừng bài đó, ghi vào danh sách báo cáo cho thầy, chuyển sang bài tiếp theo.
+4. Cuối lượt chấm, báo cáo có một mục riêng **"Bài dừng chấm do nghi AI (≥30%)"**: tên học sinh, bài, tỉ lệ, căn cứ ngắn, gợi ý xác minh.
+
+Không trừ điểm vì nghi ngờ AI. Bài dưới ngưỡng thì chấm như mọi bài khác.
