@@ -1,0 +1,6 @@
+{
+  "name": "ielts-grader",
+  "version": "1.0.0",
+  "description": "Trợ lý chấm IELTS của thầy: Writing Task 1, Writing Task 2 (sửa trực tiếp trên Google Docs ở chế độ đề xuất) và Speaking (nghe file ghi âm, phân tích fluency, chunking, phát âm).",
+  "author": { "name": "Tùng Nguyễn Bá" }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "ielts-grader",
+  "owner": {
+    "name": "Tùng Nguyễn Bá"
+  },
+  "description": "Bộ chấm IELTS Writing và Speaking theo văn phong của thầy.",
+  "plugins": [
+    {
+      "name": "ielts-grader",
+      "source": "./",
+      "description": "Chấm IELTS Writing Task 1, Task 2 và Speaking theo văn phong của thầy."
+    }
+  ]
+}
