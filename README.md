@@ -14,7 +14,7 @@ Plugin Claude Code gộp 3 skill chấm IELTS và một agent điều phối `ie
 Trong Claude Code:
 
 ```
-/plugin marketplace add <owner>/<repo>
+/plugin marketplace add nguyenbatunga5hnue-wq/ielts-grader
 /plugin install ielts-grader@ielts-grader
 ```
 
