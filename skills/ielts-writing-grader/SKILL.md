@@ -13,7 +13,7 @@ Trước khi viết bất kỳ nhận xét nào, đọc `references/van-phong.md
 
 1. **Nạp kỹ năng Google Docs.** Nếu có skill `google-workspace`, đọc nó và `references/docs.md` của nó trước khi sửa (chỉ số UTF-16, `requiredRevisionId`, chế độ `SUGGEST`). Nạp các tool Docs `read_doc`, `update_doc` và Drive `read_file_content`.
 2. **Đọc file:** Drive `read_file_content` với `includeComments: true` để đọc bài và comment đang có; Docs `read_doc` để lấy `revisionId`, chỉ số từng đoạn, các đề xuất đang mở và danh sách tab. Bài có thể nằm ở tab không phải tab đầu: luôn ghi `tabId` vào mọi `location`/`range`.
-3. **Xác định đề và loại bài.** Đề thường in đậm/nghiêng ngay trên bài. Task 1 (biểu đồ, bảng, quy trình) chấm **TA** thay cho TR. Một file có thể chứa nhiều bài: chấm từng bài, mỗi bài một khối điểm.
+3. **Xác định đề và loại bài.** Đề thường in đậm/nghiêng ngay trên bài. Task 1 (biểu đồ, bảng, quy trình) chấm **TA** thay cho TR. Với Task 2, đọc `references/mindset-task2.md` và **phân loại đề**: Multifaceted (nhiều khía cạnh), Comparative (so sánh A với B) hay Extreme (nhận định tuyệt đối). Gạch keyword/thành phần của đề để soát ở bước 5. Một file có thể chứa nhiều bài: chấm từng bài, mỗi bài một khối điểm.
 4. **Kiểm tra đã chấm chưa.** Nếu bài đã có khối điểm, comment của thầy, hoặc đề xuất sửa, đừng chấm lại từ đầu: chỉ bổ sung phần còn thiếu và báo người dùng. Chấm trùng tạo hai bộ nhận xét chồng nhau.
 5. **Chấm theo 4 tiêu chí** (mục bên dưới), ghi chú lỗi kèm vị trí trước khi sửa.
 6. **Ghi vào file** trong một batch `update_doc` (xem "Cách ghi vào file").
@@ -23,6 +23,8 @@ Trước khi viết bất kỳ nhận xét nào, đọc `references/van-phong.md
 ## Bốn tiêu chí
 
 ### Task Response (Task 2) / Task Achievement (Task 1)
+Task 2: soát theo checklist của dạng đề trong `references/mindset-task2.md` trước. Bài bỏ sót một phần yêu cầu, quan điểm không rõ/không nhất quán, hoặc có ý không liên quan đến câu chủ đề ⇒ **TR tối đa 5**. Nói rõ trong comment và khối điểm: bài thuộc dạng nào, bị chặn vì sao.
+
 Đánh giá lần lượt, và nói rõ từng điểm trong nhận xét:
 - **Đáp ứng yêu cầu đề chưa:** bài có trả lời đúng câu hỏi (agree/disagree, both views, causes/solutions...) không, có lạc đề không. Xác định keyword của đề và kiểm tra bài có bám keyword không. Nếu một đoạn lạc đề, ghi ngay sau đoạn đó `⇒ lạc đề` và comment giải thích vì sao.
 - **Có quan điểm cá nhân chưa:** quan điểm rõ ở intro không, có nhất quán đến kết luận không.
@@ -31,6 +33,8 @@ Trước khi viết bất kỳ nhận xét nào, đọc `references/van-phong.md
 - Task 1: overview có nêu xu hướng chính không, có số liệu và so sánh chính xác không, có nhóm dữ liệu hợp lý không.
 
 ### Coherence & Cohesion
+Từ nối sai quan hệ hoặc dùng máy móc ("Number one/two", "Firstly/Secondly" rập khuôn), câu không rõ quan hệ, ý ngộ nhận, hoặc ý lặp/không phát triển ⇒ **C&C tối đa 5** (xem `references/mindset-task2.md`).
+
 Trọng tâm là **logic giữa các vế câu** và **theme–rheme**:
 - **Logic giữa các vế:** liên từ có đúng quan hệ không ("However" khi không có ý đối lập, "therefore" khi vế trước không phải nguyên nhân, "What is more" mà không có ý mới). Hai vế nối bằng "which", "leading to", "thereby" có thật sự là quan hệ nhân quả không.
 - **Theme–rheme:** theme là phần đầu câu, rheme là phần thông tin mới. Câu sau nên lấy rheme (hoặc theme) câu trước làm theme. Lỗi hay gặp: mở câu bằng chủ thể mới không liên quan ("Some people", "Many people"); lặp mãi một theme; dồn liên từ đầu câu thay vì nối bằng nội dung. Sửa bằng cụm nối ngắn đầu câu, sửa ít chữ nhất:

@@ -5,7 +5,7 @@ Plugin Claude Code gộp 4 skill chấm IELTS và một agent điều phối `ie
 | Thành phần | Việc |
 |---|---|
 | `agents/ielts-grader.md` | Agent: nhận bài (Doc, Sheets, audio), tự chọn skill phù hợp, chấm hàng loạt |
-| `skills/ielts-writing-grader` | Writing Task 2: chấm 4 tiêu chí, sửa trên Google Docs ở chế độ đề xuất, ưu tiên theme–rheme |
+| `skills/ielts-writing-grader` | Writing Task 2: phân loại đề (Multifaceted / Comparative / Extreme), chấm 4 tiêu chí, sửa trên Google Docs ở chế độ đề xuất, ưu tiên theme–rheme |
 | `skills/ielts-task1-grader` | Writing Task 1: đọc biểu đồ, chấm TA, key features, diễn đạt linh hoạt |
 | `skills/ielts-ai-detector` | Nhận diện bài Writing do AI viết/sửa: số đo + so với bài cũ của học sinh, báo mức nghi ngờ riêng cho thầy |
 | `skills/ielts-speaking-analyzer` | Speaking: nghe file ghi âm, đo fluency, chunking, âm vị, chấm FC/LR/GRA/P |
