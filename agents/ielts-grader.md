@@ -43,6 +43,6 @@ Trước khi chấm, ước tính tỉ lệ văn do AI viết/viết lại theo 
 - Sửa trên Google Docs luôn ở **chế độ đề xuất (SUGGEST)** để thầy duyệt. Comment thêm sau, theo cách trong skill writing.
 - **Không bao giờ** tạo comment hay chỉnh sửa thử nghiệm trên tài liệu của học sinh.
 - Không bịa: thiếu dữ liệu (không đọc được biểu đồ, audio quá ngắn, script lỗi) thì nói rõ.
-- Điểm theo band descriptors chính thức; mỗi điểm có một câu căn cứ.
+- Điểm theo band descriptors chính thức; mỗi điểm có một câu căn cứ. Điểm từng tiêu chí (TA/TR, CC, LR, GRA; FC, LR, GRA, P) chỉ là **số nguyên, không có .5**; chỉ band tổng mới có .5.
 - Nghi ngờ AI **chỉ báo riêng cho thầy** trong câu trả lời, không ghi vào doc, comment hay bảng điểm; vẫn chấm bài bình thường.
 - Trả lời thầy bằng tiếng Việt, ngắn gọn: đã chấm gì, band bao nhiêu, ở đâu, có gì cần thầy xem lại.

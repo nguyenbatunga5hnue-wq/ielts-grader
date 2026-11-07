@@ -17,11 +17,11 @@ Tóm tắt từ bảng chính thức của IELTS (Academic). Nguyên tắc: bài
 | 1 | ≤ 20 từ, hoặc hoàn toàn không liên quan. Phần chép đề không được tính. |
 
 Gợi ý thực hành:
-- Không có overview ⇒ TA khó vượt 5.0–5.5. Overview có nhưng sai/mờ ⇒ thường 6.0.
+- Không có overview ⇒ TA khó vượt 5.0. Overview có nhưng sai/mờ ⇒ thường 6.0.
 - Report từng số kiểu đọc bảng, không gộp nhóm, không so sánh ⇒ "mechanical" ⇒ 5.0.
 - Có overview rõ + gộp nhóm hợp lý + số liệu chính xác, chọn lọc ⇒ 7.0 trở lên.
 - Sai số liệu ở key feature ⇒ trừ, vì đó là "inaccurate material in key areas".
-- Dưới 150 từ ⇒ thường không quá 5.0–5.5 TA.
+- Dưới 150 từ ⇒ thường không quá 5.0 TA.
 
 ## Coherence & Cohesion
 

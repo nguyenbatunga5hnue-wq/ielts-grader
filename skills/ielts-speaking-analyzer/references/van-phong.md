@@ -17,7 +17,7 @@ Sau câu đùa vẫn phải giải thích và chỉ cách sửa. Không đùa v�
 ## Mẫu
 
 Fluency:
-> Con nói được khoảng 105 từ/phút. Nghe thì không chậm, nhưng con ngừng tới 6 lần trên 1 giây, chủ yếu khi bắt đầu một ý mới (giây 0:42 "and the reason is… / (1.6s) / because"). Đây là kiểu ngừng **bí ý**, chứ không phải bí từ. Giám khảo nghe sẽ thấy con đang nghĩ xem nói gì tiếp → FC bị kéo xuống 5.5–6. Con nên có sẵn khung trả lời: Answer → Reason → Example nhé, vào phòng thi chỉ việc điền ý vào.
+> Con nói được khoảng 105 từ/phút. Nghe thì không chậm, nhưng con ngừng tới 6 lần trên 1 giây, chủ yếu khi bắt đầu một ý mới (giây 0:42 "and the reason is… / (1.6s) / because"). Đây là kiểu ngừng **bí ý**, chứ không phải bí từ. Giám khảo nghe sẽ thấy con đang nghĩ xem nói gì tiếp → FC khó vượt band 6. Con nên có sẵn khung trả lời: Answer → Reason → Example nhé, vào phòng thi chỉ việc điền ý vào.
 
 Chunking:
 > Con hay ngắt hơi **giữa cụm**, ví dụ "I think that / (0.7s) / the most / (0.5s) / important thing". Ngắt kiểu này nghe như đang dịch từng chữ trong đầu. Con tập đọc lại theo cụm ý như sau nhé:
@@ -37,7 +37,7 @@ Ngữ điệu:
 1. Fluency & Coherence: 6.0 - Con sẵn lòng nói dài và giữ được mạch, nhưng đôi lúc mất mạch vì ngừng bí ý (6 lần >1s) và hay ngắt giữa cụm → đúng mô tả band 6. Muốn lên 7 thì phải nói dài "không thấy gắng sức" và dùng marker linh hoạt hơn.
 2. Lexical Resource: 6.0 - Đủ từ để nói dài, nghĩa rõ, nhưng còn "good", "very nice" lặp lại, chưa có cụm ít phổ biến/idiomatic nào (điều kiện của band 7). (ước lượng từ transcript máy)
 3. Grammatical Range & Accuracy: 6.0 - Có câu phức nhưng hay sai ở chính câu phức (thì, -s), chưa đến mức "câu không lỗi xuất hiện thường xuyên" của band 7. (ước lượng)
-4. Pronunciation: 5.5 - Nhìn chung hiểu được, nhưng nuốt âm cuối là lỗi hệ thống, cộng thêm /θ/ → /t/ và chunking hụt nhiều → mới có một phần đặc điểm band 6.
+4. Pronunciation: 5.0 - Nhìn chung hiểu được, nhưng nuốt âm cuối là lỗi hệ thống, cộng thêm /θ/ → /t/ và chunking hụt nhiều → mới có một phần đặc điểm band 6.
 ⇒ Overall: 6.0
 
 Bài tập về nhà:

@@ -79,7 +79,7 @@ Thầy muốn em **hiểu biểu đồ nói gì** rồi mới viết, chứ khô
 - So sánh hơn/nhất, mạo từ ("the highest", "a rise of"), số ít/nhiều ("one in five people"), dấu phẩy hàng nghìn.
 - **Gợi ý cấu trúc hay hơn:** mệnh đề quan hệ rút gọn, "while/whereas", cụm phân từ ("..., reaching a peak of 50% in 2010"), "with + noun + V-ing", so sánh bội số.
 
-**Chấm band** theo `references/band-descriptors.md`, bước 0.5. Band tổng là trung bình bốn tiêu chí làm tròn theo quy tắc IELTS; có thể để khoảng (`5.5-6.0`) khi bài sát ranh giới.
+**Chấm band** theo `references/band-descriptors.md`. Mỗi tiêu chí lẻ chỉ cho **số nguyên** (5.0, 6.0, 7.0), **không có .5**; chỉ band tổng mới có .5. Band tổng là trung bình bốn tiêu chí, làm tròn đến 0.5 gần nhất theo quy tắc IELTS (.25 → lên .5, .75 → lên band trên); có thể để khoảng (`5.5-6.0`) khi bài sát ranh giới.
 
 ## Cách ghi vào file
 

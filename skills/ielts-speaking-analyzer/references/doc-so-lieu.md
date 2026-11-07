@@ -11,7 +11,7 @@ Các ngưỡng dưới đây là **tham khảo** cho người học IELTS, rút 
 | `phonation_ratio` | tỉ lệ thời gian có tiếng | <0.65: ngừng quá nhiều · 0.65–0.8: bình thường · >0.8: liền mạch |
 | `pauses_per_min` | số lần ngừng ≥0.25s mỗi phút | >20: rất ngắt quãng · 10–20: trung bình · <10: liền mạch |
 | `n_long_pauses_1s` | ngừng ≥1s | mỗi lần thường là lúc **bí ý / bí từ**. Xem transcript ngay sau đó để biết con bí gì |
-| `mean_length_of_run_words` | trung bình số từ giữa hai lần ngừng | <4: nói từng mẩu (≈FC 4–5) · 4–7: (≈5.5–6.5) · >8: nói thành cụm dài, tự nhiên (≈7+) |
+| `mean_length_of_run_words` | trung bình số từ giữa hai lần ngừng | <4: nói từng mẩu (≈FC 4–5) · 4–7: (≈FC 6) · >8: nói thành cụm dài, tự nhiên (≈7+) |
 | `pct_pauses_mid_chunk` | % lần ngừng rơi **giữa cụm** | <25%: chunking tốt · 25–45%: cần luyện · >45%: ngắt hơi sai chỗ là thói quen |
 | `repetitions` | lặp từ liền nhau ("I I", "the the") | nhiều = đang vừa nói vừa nghĩ, hoặc tự sửa |
 | `probable_filled_pauses` + `explicit_fillers` | ừm/à | >6 lần/phút là dày. ASR thường bỏ "uh/um", nên mục `{uh}` là ước lượng |

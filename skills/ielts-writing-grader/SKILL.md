@@ -49,7 +49,7 @@ Trọng tâm là **logic giữa các vế câu** và **theme–rheme**:
 - **Gợi ý cấu trúc hay hơn:** chỉ cho em một hai chỗ có thể nâng cấp (mệnh đề quan hệ rút gọn, đảo ngữ, câu điều kiện, cụm phân từ, cleft sentence...), viết ra câu mẫu dựa trên chính câu của em.
 - Khen cấu trúc em đã dùng tốt.
 
-**Chấm band** theo band descriptors chính thức, bước 0.5. Band tổng là trung bình bốn tiêu chí, làm tròn theo quy tắc IELTS; nếu thầy hay để khoảng (ví dụ `5.5-6.0`) thì dùng khoảng khi bài nằm sát ranh giới.
+**Chấm band** theo band descriptors chính thức. Mỗi tiêu chí lẻ chỉ cho **số nguyên** (5.0, 6.0, 7.0), **không có .5**; chỉ band tổng mới có .5. Band tổng là trung bình bốn tiêu chí, làm tròn đến 0.5 gần nhất theo quy tắc IELTS (.25 → lên .5, .75 → lên band trên); nếu thầy hay để khoảng (ví dụ `5.5-6.0`) thì dùng khoảng khi bài nằm sát ranh giới.
 
 ## Cách ghi vào file
 

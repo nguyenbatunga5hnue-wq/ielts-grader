@@ -41,6 +41,7 @@ Writing cần kết nối Google Docs/Drive/Sheets.
 - Xưng **thầy**, gọi học sinh là **con** (dặn "gọi em" thì đổi).
 - Sửa trên Google Docs ở **chế độ đề xuất**; không bao giờ tạo comment thử trên bài học sinh.
 - **Kiểm tra AI trước khi chấm writing**: tỉ lệ văn AI < 30% thì chấm bình thường; ≥ 30% thì **dừng bài đó** (không sửa, không điền điểm), báo riêng cho thầy rồi chấm người tiếp theo. Đổi ngưỡng: "ngưỡng 40%".
+- Điểm từng tiêu chí là **số nguyên** (không có .5); chỉ band tổng mới có .5.
 - Speaking: bài dưới ~30 giây chỉ cho điểm ước lượng tạm.
 
 ## Dùng ở phiên sau

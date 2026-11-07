@@ -6,7 +6,7 @@ Nguồn: IELTS Speaking Band Descriptors (bản người dùng cung cấp). Ph�
 
 1. Muốn được một band, học sinh phải **đáp ứng ĐỦ các đặc điểm tích cực** của band đó. Thiếu một ý thì xuống band dưới.
 2. Điểm là **mức trung bình trên cả bài** (mọi Part). Không chấm theo câu hay nhất hay câu tệ nhất.
-3. Bốn tiêu chí ngang nhau. Overall = trung bình 4 tiêu chí, làm tròn đến 0.5 gần nhất (.25 → lên .5, .75 → lên band trên).
+3. Bốn tiêu chí ngang nhau, mỗi tiêu chí chỉ cho **số nguyên** (không có .5). Overall = trung bình 4 tiêu chí, làm tròn đến 0.5 gần nhất (.25 → lên .5, .75 → lên band trên).
 4. P band 7 = có **tất cả** đặc điểm của band 6 và **một phần** của band 8. P band 5 = tất cả đặc điểm band 4 và một phần band 6. P band 3 tương tự (giữa band 2 và 4).
 5. Bài quá ngắn thì không đủ căn cứ cho band cao: band 7+ FC cần "long turns" (Part 2 khoảng 1.5–2 phút, Part 3 trả lời có phát triển).
 
