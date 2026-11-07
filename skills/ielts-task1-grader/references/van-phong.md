@@ -114,7 +114,7 @@ Bài Task 1 dùng TA thay TR:
 
 ```
 1.  TA: 6.0 - Em có overview, số liệu khá chính xác. Nhưng body 1 kể hết từng năm, chưa gộp nhóm và so sánh.
-2.  GRA: 6.5 - Dùng tốt "while" và cụm phân từ. Còn sai thì ở số liệu dự đoán.
+2.  GRA: 6.0 - Dùng tốt "while" và cụm phân từ. Còn sai thì ở số liệu dự đoán.
 3.  LR: 6.0 - Từ xu hướng còn lặp (increase, increase, increase), dùng "dramatically" sai mức độ.
 4.  C&C: 6.0 - Chia đoạn theo từng đối tượng thay vì theo xu hướng, nên bị lặp.
 ⇒ 6.0

@@ -55,7 +55,7 @@ Xem `references/doc-so-lieu.md` để biết ngưỡng và cách diễn giải t
 - Đi từng tiêu chí, **so với mô tả của band**. Muốn cho band nào thì học sinh phải đáp ứng **đủ** đặc điểm tích cực của band đó. Cân nhắc band trên và band dưới rồi mới chốt.
 - Chấm theo **mức trung bình cả bài** (mọi Part). Không chấm theo câu hay nhất.
 - Mỗi điểm phải có **căn cứ**: trích mô tả band (dịch ngắn) + bằng chứng (số đo, hoặc trích câu của con kèm giây).
-- Overall = trung bình 4 tiêu chí, làm tròn đến 0.5 gần nhất.
+- Mỗi tiêu chí lẻ (FC, LR, GRA, P) chỉ cho **số nguyên**, **không có .5**. Overall = trung bình 4 tiêu chí, làm tròn đến 0.5 gần nhất.
 
 Trọng tâm từng tiêu chí:
 
