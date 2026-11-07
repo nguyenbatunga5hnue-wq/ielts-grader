@@ -1,13 +1,8 @@
----
-name: ielts-ai-detector
-description: "Đánh giá khả năng bài IELTS Writing (Task 1 hoặc Task 2) do AI viết hoặc AI sửa nhiều (ChatGPT, Gemini, QuillBot...). Kết hợp số đo văn bản (từ/cụm kiểu AI, độ đều của câu, dấu vết copy-paste), so sánh với bài cũ của chính học sinh, và đọc kỹ của Claude. Kết quả là mức nghi ngờ có bằng chứng, báo riêng cho thầy, kèm cách xác minh. Dùng khi người dùng hỏi bài có phải AI viết không, nghi học sinh dùng ChatGPT, \"check AI\", \"bài này tự viết không\", hoặc khi đang chấm writing thấy bài bất thường."
----
-
 # Nhận diện bài Writing do AI viết
 
 ## Nguyên tắc (đọc trước tiên)
 
-1. **Không có công cụ nào phát hiện AI chắc chắn.** Kể cả các detector thương mại vẫn báo sai, và nghiên cứu cho thấy chúng **hay bắt oan người viết không phải bản ngữ**, vì văn của người học thường đơn giản và dễ đoán. Skill này chỉ đưa ra **mức nghi ngờ có bằng chứng**, không bao giờ kết luận "bài này do AI viết".
+1. **Không có công cụ nào phát hiện AI chắc chắn.** Kể cả các detector thương mại vẫn báo sai, và nghiên cứu cho thấy chúng **hay bắt oan người viết không phải bản ngữ**, vì văn của người học thường đơn giản và dễ đoán. Phần này chỉ đưa ra **mức nghi ngờ có bằng chứng**, không bao giờ kết luận "bài này do AI viết".
 2. **Kết quả chỉ báo riêng cho thầy trong chat.** Không bao giờ ghi nghi ngờ AI vào Google Doc của học sinh, comment, hay bảng điểm, trừ khi thầy yêu cầu rõ.
 3. **Bằng chứng mạnh nhất là so với chính học sinh đó**: bài cũ, lỗi quen thuộc, cách viết trên lớp. Số đo trên một bài đơn lẻ chỉ là gợi ý.
 4. **Văn mẫu thầy dạy không phải là AI.** Học sinh IELTS hay học thuộc cụm như "pale in significance", "the aforementioned", "I would argue that". Đây là template học từ lớp, nên chỉ tính là dấu hiệu AI khi đi kèm các dấu hiệu khác.
@@ -27,14 +22,14 @@ description: "Đánh giá khả năng bài IELTS Writing (Task 1 hoặc Task 2) 
 
 ```bash
 pip install -q wordfreq   # lần đầu
-python3 <skill>/scripts/ai_signals.py bai.txt --baseline bai_cu1.txt bai_cu2.txt
+python3 <thư mục skill ielts-grader>/scripts/ai_signals.py bai.txt --baseline bai_cu1.txt bai_cu2.txt
 ```
 
-Ý nghĩa các chỉ số và ngưỡng: xem `references/dau-hieu.md`.
+Ý nghĩa các chỉ số và ngưỡng: xem `references/dau-hieu-ai.md`.
 
 ### 3. Đọc kỹ (phần quan trọng nhất, máy không làm được)
 
-Đọc bài như một giáo viên IELTS, đối chiếu với bảng dấu hiệu trong `references/dau-hieu.md`. Tập trung vào:
+Đọc bài như một giáo viên IELTS, đối chiếu với bảng dấu hiệu trong `references/dau-hieu-ai.md`. Tập trung vào:
 - **Hồ sơ lỗi**: học sinh Việt có lỗi quen (mạo từ, -s, thì, chia động từ, collocation dịch từ tiếng Việt). Bài **không có lỗi nào** mà từ vựng lại rất "sang" là bất thường. Bài có câu cực trơn chen giữa câu lỗi cơ bản là dấu hiệu **sửa từng phần** bằng AI. Ghi lại cụ thể câu nào.
 - **So với baseline**: band nhảy vọt (5.5 → 7.5+), lỗi quen biến mất, giọng văn đổi hẳn.
 - **Nội dung**: ví dụ chung chung, không có chi tiết cá nhân hay địa phương; lập luận "cân bằng" kiểu nói cho đủ hai phía; câu kết sáo kiểu "striking a balance is crucial".
@@ -97,12 +92,12 @@ Gợi ý xác minh: <2–3 cách bên dưới, chọn cái phù hợp>
 
 Giọng điệu khi đề xuất: trung lập, không buộc tội. Đây là thông tin để thầy cân nhắc, kèm lời nhắc rằng máy và Claude đều có thể sai.
 
-## Khi đang chấm bài (dùng cùng skill writing)
+## Khi đang chấm bài (dùng cùng hướng dẫn writing)
 
 **Mọi bài writing đều phải qua bước kiểm tra AI TRƯỚC khi chấm**, cả khi chấm lẻ lẫn chấm hàng loạt:
 
 1. Lấy văn bản gốc, chạy `ai_signals.py` (có baseline nếu có), duyệt nhãn từng câu, tính tỉ lệ AI.
-2. Nếu < 30%: chấm bình thường theo skill writing. **Không** ghi gì về AI vào doc.
+2. Nếu < 30%: chấm bình thường theo `guides/writing-task2.md` hoặc `guides/writing-task1.md`. **Không** ghi gì về AI vào doc.
 3. Nếu ≥ 30%: dừng bài đó, ghi vào danh sách báo cáo cho thầy, chuyển sang bài tiếp theo.
 4. Cuối lượt chấm, báo cáo có một mục riêng **"Bài dừng chấm do nghi AI (≥30%)"**: tên học sinh, bài, tỉ lệ, căn cứ ngắn, gợi ý xác minh.
 

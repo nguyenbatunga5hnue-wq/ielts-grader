@@ -65,6 +65,32 @@ Về từ vựng (mẫu):
 Về ngữ pháp (mẫu, gợi ý cấu trúc hay hơn):
 > Câu này đúng ngữ pháp rồi, nhưng hơi dài và lặp "which". Em thử rút gọn mệnh đề quan hệ xem nhé: "..., resulting in ..." thay cho "..., which results in ..." --> câu gọn hơn, mà giám khảo cũng thấy được range ngữ pháp.
 
+## Mẫu comment riêng cho Task 1 (viết theo cùng giọng)
+
+Report máy móc:
+> Em đang đọc lại bảng số liệu cho giám khảo: 2008 là 1200, 2009 là 1350, 2010 là 1500... Giám khảo có bảng trong tay rồi, không cần em đọc lại đâu nhé. Em thử nhìn xem 3 con số này nói lên điều gì --> tăng đều 150 người mỗi năm. Viết thế này: "rose steadily by 150 participants a year, from 1,200 in 2008 to 1,500 in 2010" --> 1 câu mà đủ cả xu hướng lẫn số liệu.
+
+Overview:
+> Overview là phần quan trọng nhất của task 1 - giám khảo đọc overview để biết em có HIỂU biểu đồ không. Overview của em đang nhồi số liệu --> bỏ số đi nhé, chỉ giữ 2 ý lớn: xu hướng chung và đặc điểm nổi bật nhất.
+
+Thiếu key feature:
+> Em bỏ sót điểm nổi bật nhất của biểu đồ: năm cuối nhóm 40+ tăng vọt lên 1,050, trong khi trước đó chỉ tăng 50 mỗi năm. Đây là key feature, thiếu là TA khó qua 6.0 nhé.
+
+Thừa chi tiết:
+> Đoạn này em kể hết tất cả các năm của cả 5 nước --> giám khảo đọc mệt mà vẫn không thấy em muốn nói gì. Task 1 là bài CHỌN LỌC nhé: em chỉ cần nước cao nhất, thấp nhất, và nước có thay đổi bất thường. Mấy nước ở giữa có xu hướng giống nhau thì gộp lại 1 câu thôi.
+
+Sai số liệu:
+> Em đọc nhầm số rồi: nhóm 40+ năm 2012 là 1,050 chứ không phải 1,500. Sai số liệu ở task 1 là lỗi TA nặng, vì nó cho thấy em đọc biểu đồ chưa kỹ. Viết xong em check lại từng con số với biểu đồ nhé.
+
+Gộp nhóm và so sánh:
+> Em đang tả từng nhóm riêng lẻ: nhóm A tăng, nhóm B tăng, nhóm C tăng... Mà cả 3 nhóm đều tăng --> gộp lại 1 câu, rồi so sánh xem nhóm nào tăng nhanh nhất. Kiểu: "All three groups grew, but the rise was most pronounced among..." --> thế mới là hiểu biểu đồ.
+
+Thêm thông tin ngoài biểu đồ:
+> Chỗ này em giải thích nguyên nhân ("because people care more about health") - biểu đồ không hề nói điều này. Task 1 chỉ report những gì có trên biểu đồ thôi nhé, không đoán, không nêu ý kiến. Bỏ đi.
+
+Từ vựng xu hướng:
+> "increased dramatically" mà chỉ từ 20% lên 22% thì tôi xinn đấyyyy. "dramatically" là tăng rất mạnh nhé, 2% thì dùng "rose slightly" hoặc "edged up" thôi.
+
 ## Mẫu ghi chú chèn trong bài
 
 Một dòng riêng ngay sau đoạn liên quan:
@@ -84,7 +110,15 @@ Thầy liệt kê điểm từng tiêu chí rồi band tổng. Thêm sau mỗi �
 ⇒ 5.5-6.0
 ```
 
-Bài Task 1 thay TR bằng TA.
+Bài Task 1 dùng TA thay TR:
+
+```
+1.  TA: 6.0 - Em có overview, số liệu khá chính xác. Nhưng body 1 kể hết từng năm, chưa gộp nhóm và so sánh.
+2.  GRA: 6.0 - Dùng tốt "while" và cụm phân từ. Còn sai thì ở số liệu dự đoán.
+3.  LR: 6.0 - Từ xu hướng còn lặp (increase, increase, increase), dùng "dramatically" sai mức độ.
+4.  C&C: 6.0 - Chia đoạn theo từng đối tượng thay vì theo xu hướng, nên bị lặp.
+⇒ 6.0
+```
 
 ## Mẫu dàn ý gợi ý (tab "Suggested outline", chỉ làm khi được yêu cầu)
 

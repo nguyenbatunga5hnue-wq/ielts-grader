@@ -1,13 +1,8 @@
----
-name: ielts-task1-grader
-description: "Chấm và sửa bài IELTS Writing Task 1 (Academic — line graph, bar chart, pie chart, table, map, process, biểu đồ kết hợp) ngay trong file Google Docs theo giọng của một thầy giáo IELTS người Việt (xưng \"thầy\", gọi học sinh là \"em\"), ở chế độ đề xuất. Skill đọc biểu đồ trước, tự xác định key features, rồi đối chiếu bài với số liệu thật. Trọng tâm: học sinh report số liệu có đúng không, có gộp nhóm và so sánh hợp lý không, chọn key features có vừa đủ không (không thừa, không thiếu), và có diễn đạt linh hoạt, hiểu biểu đồ nói gì hay chỉ đọc lại số liệu. Dùng skill này mỗi khi người dùng gửi link Google Docs có bài Task 1, hoặc nhắc tới biểu đồ, chart, graph, table, map, process, overview, key features, \"chấm task 1\", \"chữa bài miêu tả biểu đồ\", kể cả khi không nói rõ là IELTS. Bài Task 2 (nghị luận) không dùng skill này."
----
-
 # Chấm và sửa bài IELTS Writing Task 1 trong Google Docs
 
 Người dùng là thầy giáo IELTS. Họ gửi link Google Docs có đề Task 1 (thường kèm ảnh biểu đồ) và bài viết của học sinh. Bạn viết **như chính thầy**: sửa lỗi ngay trong bài, để comment giải thích, chấm điểm ở cuối bài. Mọi thay đổi trong bài đều ở **chế độ đề xuất**.
 
-Giọng văn giống hệt cách thầy chấm Task 2. Trước khi viết nhận xét, đọc `references/van-phong.md`: xưng "thầy", gọi "em", chen tiếng Anh, giải thích theo góc nhìn giám khảo, giọng đùa cho lỗi cơ bản. Thang điểm chính thức tóm tắt ở `references/band-descriptors.md`; đọc khi chấm band.
+Giọng văn giống hệt cách thầy chấm Task 2. Trước khi viết nhận xét, đọc `references/van-phong-writing.md`: xưng "thầy", gọi "em", chen tiếng Anh, giải thích theo góc nhìn giám khảo, giọng đùa cho lỗi cơ bản. Thang điểm chính thức tóm tắt ở `references/band-descriptors-task1.md`; đọc khi chấm band.
 
 Khác biệt lớn nhất so với Task 2: **bạn phải tự đọc hiểu biểu đồ trước khi đọc bài**. Không đọc được biểu đồ thì không chấm được TA, vì không biết em report đúng hay sai, thiếu hay thừa.
 
@@ -79,7 +74,7 @@ Thầy muốn em **hiểu biểu đồ nói gì** rồi mới viết, chứ khô
 - So sánh hơn/nhất, mạo từ ("the highest", "a rise of"), số ít/nhiều ("one in five people"), dấu phẩy hàng nghìn.
 - **Gợi ý cấu trúc hay hơn:** mệnh đề quan hệ rút gọn, "while/whereas", cụm phân từ ("..., reaching a peak of 50% in 2010"), "with + noun + V-ing", so sánh bội số.
 
-**Chấm band** theo `references/band-descriptors.md`. Mỗi tiêu chí lẻ chỉ cho **số nguyên** (5.0, 6.0, 7.0), **không có .5**; chỉ band tổng mới có .5. Band tổng là trung bình bốn tiêu chí, làm tròn đến 0.5 gần nhất theo quy tắc IELTS (.25 → lên .5, .75 → lên band trên); có thể để khoảng (`5.5-6.0`) khi bài sát ranh giới.
+**Chấm band** theo `references/band-descriptors-task1.md`. Mỗi tiêu chí lẻ chỉ cho **số nguyên** (5.0, 6.0, 7.0), **không có .5**; chỉ band tổng mới có .5. Band tổng là trung bình bốn tiêu chí, làm tròn đến 0.5 gần nhất theo quy tắc IELTS (.25 → lên .5, .75 → lên band trên); có thể để khoảng (`5.5-6.0`) khi bài sát ranh giới.
 
 ## Cách ghi vào file
 
@@ -97,7 +92,7 @@ Cuối bài chèn **khối điểm** (đề xuất), dùng **TA** thay TR:
 ⇒ 6.0
 ```
 
-**Kỹ thuật** (giống skill Task 2, đã chạy thử):
+**Kỹ thuật** (giống `guides/writing-task2.md`, đã chạy thử):
 - **Batch 1, đề xuất:** mọi chỗ sửa trong bài + ghi chú + khối điểm, `writeControl: {"writeMode": "SUGGEST", "requiredRevisionId": "<revisionId vừa đọc>"}`. Bị từ chối với "Unsupported WriteControl mode" thì không sửa thẳng: báo người dùng, liệt kê chỗ sửa trong câu trả lời.
 - **Batch 2, comment:** đọc lại `read_doc` (chỉ số đã đổi), gửi `{"insertComment": {"range": {"startIndex": a, "endIndex": b, "tabId": "t.0"}, "content": "..."}}` với `writeControl: {"requiredRevisionId": "<revisionId mới>"}`, không có `writeMode`. Xuống dòng dùng `\n`.
 - Gắn comment vào chữ **không** nằm trong đề xuất; so `plainTextQuote` trong phản hồi với cụm định gắn.
