@@ -13,12 +13,16 @@ Trước khi viết bất kỳ nhận xét nào, đọc `references/van-phong.md
 
 1. **Nạp kỹ năng Google Docs.** Nếu có skill `google-workspace`, đọc nó và `references/docs.md` của nó trước khi sửa (chỉ số UTF-16, `requiredRevisionId`, chế độ `SUGGEST`). Nạp các tool Docs `read_doc`, `update_doc` và Drive `read_file_content`.
 2. **Đọc file:** Drive `read_file_content` với `includeComments: true` để đọc bài và comment đang có; Docs `read_doc` để lấy `revisionId`, chỉ số từng đoạn, các đề xuất đang mở và danh sách tab. Bài có thể nằm ở tab không phải tab đầu: luôn ghi `tabId` vào mọi `location`/`range`.
-3. **Xác định đề và loại bài.** Đề thường in đậm/nghiêng ngay trên bài. Task 1 (biểu đồ, bảng, quy trình) chấm **TA** thay cho TR. Với Task 2, đọc `references/mindset-task2.md` và **phân loại đề**: Multifaceted (nhiều khía cạnh), Comparative (so sánh A với B) hay Extreme (nhận định tuyệt đối). Gạch keyword/thành phần của đề để soát ở bước 5. Một file có thể chứa nhiều bài: chấm từng bài, mỗi bài một khối điểm.
+3. **Xác định đề và loại bài.** Đề thường in đậm/nghiêng ngay trên bài. Task 1 (biểu đồ, bảng, quy trình) chấm **TA** thay cho TR. Với Task 2, đọc `references/mindset-task2.md` và **phân loại đề**: Multifaceted (nhiều khía cạnh), Comparative (so sánh A với B) hay Extreme (nhận định tuyệt đối). Gạch keyword/thành phần của đề để soát ở bước 6. Đọc thêm `references/linearity.md` và `references/thematic-progression.md` (phương pháp tuyến tính và Theme–Rheme của khóa THIỂU) trước khi chấm TR và C&C. Một file có thể chứa nhiều bài: chấm từng bài, mỗi bài một khối điểm.
 4. **Kiểm tra đã chấm chưa.** Nếu bài đã có khối điểm, comment của thầy, hoặc đề xuất sửa, đừng chấm lại từ đầu: chỉ bổ sung phần còn thiếu và báo người dùng. Chấm trùng tạo hai bộ nhận xét chồng nhau.
-5. **Chấm theo 4 tiêu chí** (mục bên dưới), ghi chú lỗi kèm vị trí trước khi sửa.
-6. **Ghi vào file** trong một batch `update_doc` (xem "Cách ghi vào file").
-7. **Đọc lại** để chắc mọi thay đổi là đề xuất (`suggestedInsertionIds` / `suggestedDeletionIds`) và comment đã gắn đúng chỗ.
-8. **Báo người dùng** ngắn gọn bằng tiếng Việt: band, các lỗi chính, số chỗ sửa, và nhắc là đang chờ duyệt.
+5. **Soát dòng ý và chuỗi câu của từng body** (trong phần làm việc, chưa ghi vào doc):
+   - **Linearity** (`references/linearity.md`): tách ý, bỏ từ nối, gộp ý trùng, bỏ ý lạc, viết ý ẩn (\*), rồi xếp thành dòng mũi tên. Đánh dấu: nhân quả chạy qua lại, ép nối hai ý độc lập, mất unity, ý chính nằm trong mệnh đề phụ.
+   - **Thematic progression** (`references/thematic-progression.md`): ghi Theme từng câu, gán RT/TT/ERT/ETT/N, đếm tỉ lệ; đánh dấu 6 lỗi văn phong người Việt (marked theme thừa, theme shift, lặp Rheme, reference shift, từ nối sai, phi tuyến tính).
+   - Đoạn hỏng tuyến tính thì **xếp lại dòng ý trước**, đừng chữa dày từng câu: một lần xếp lại sửa được cả linking, chính – phụ, lặp ý.
+6. **Chấm theo 4 tiêu chí** (mục bên dưới), ghi chú lỗi kèm vị trí trước khi sửa.
+7. **Ghi vào file** trong một batch `update_doc` (xem "Cách ghi vào file").
+8. **Đọc lại** để chắc mọi thay đổi là đề xuất (`suggestedInsertionIds` / `suggestedDeletionIds`) và comment đã gắn đúng chỗ.
+9. **Báo người dùng** ngắn gọn bằng tiếng Việt: band, các lỗi chính, số chỗ sửa, và nhắc là đang chờ duyệt.
 
 ## Bốn tiêu chí
 
@@ -29,19 +33,23 @@ Task 2: soát theo checklist của dạng đề trong `references/mindset-task2.
 - **Đáp ứng yêu cầu đề chưa:** bài có trả lời đúng câu hỏi (agree/disagree, both views, causes/solutions...) không, có lạc đề không. Xác định keyword của đề và kiểm tra bài có bám keyword không. Nếu một đoạn lạc đề, ghi ngay sau đoạn đó `⇒ lạc đề` và comment giải thích vì sao.
 - **Có quan điểm cá nhân chưa:** quan điểm rõ ở intro không, có nhất quán đến kết luận không.
 - **Mỗi main idea có supporting ideas chưa:** giải thích, ví dụ, hệ quả.
-- **Phát triển tuyến tính chưa:** ý sau có đi tiếp từ ý trước (A → B → C) hay nhảy cóc, lặp lại, hoặc nguỵ biện. Khi lập luận hỏng, viết lại chuỗi lập luận đúng thành các bước đánh số có mũi tên, như mẫu trong `references/van-phong.md`.
+- **Phát triển tuyến tính chưa:** ý sau có đi tiếp từ ý trước (A → B → C) hay nhảy cóc, lặp lại, hoặc nguỵ biện. Soát theo bảy đặc điểm trong `references/linearity.md`: ý lạc hướng hoặc ý bỏ đi không mất gì (không "component-integral") tính là ý không liên quan; ví dụ chung chung kiểu "If a student…, he will…" hoặc liệt kê nhiều ví dụ không triển khai là supporting ideas yếu. Khi lập luận hỏng, viết lại chuỗi lập luận đúng thành các bước đánh số có mũi tên, (\*) cho ý ẩn, như mẫu trong `references/linearity.md` mục 10 và `references/van-phong.md`. Không thêm ý của mình làm đổi lập luận của em.
 - Task 1: overview có nêu xu hướng chính không, có số liệu và so sánh chính xác không, có nhóm dữ liệu hợp lý không.
 
 ### Coherence & Cohesion
 Từ nối sai quan hệ hoặc dùng máy móc ("Number one/two", "Firstly/Secondly" rập khuôn), câu không rõ quan hệ, ý ngộ nhận, hoặc ý lặp/không phát triển ⇒ **C&C tối đa 5** (xem `references/mindset-task2.md`).
 
-Trọng tâm là **logic giữa các vế câu** và **theme–rheme**:
+Thêm các trường hợp chặn ở 5 từ phương pháp của thầy: nhân quả chạy qua lại (A → B → also C; A ← B → C; nguyên nhân – kết quả – nguyên nhân), ép nối hai ý độc lập bằng một liên từ tiện tay, hoặc một body mà câu nối đứt (N) nhiều hơn câu nối RT. Bảng quy đổi đầy đủ: `references/linearity.md` mục 9 và `references/thematic-progression.md` mục 7. Ngược lại, dòng ý tuyến tính, đọc một lần là hiểu, đa số câu nối RT/TT thì là căn cứ cho C&C 7+, kể cả khi từ vựng đơn giản (thầy: "thà cho điểm cao bài từ vựng đơn giản mà đọc đến đâu hiểu đến đó").
+
+Trọng tâm là **tuyến tính**, **logic giữa các vế câu** và **theme–rheme**:
+- **Tuyến tính:** nhân quả đi một chiều; nhiều nguyên nhân thì gom một chỗ, hậu quả một chỗ, hậu quả bao trùm đứng cuối; lý do liên kết thì không tách nhánh; "A also B" thì A quan trọng hơn; mỗi đoạn một ý chính (unity), hai ý độc lập thì tách đoạn.
 - **Logic giữa các vế:** liên từ có đúng quan hệ không ("However" khi không có ý đối lập, "therefore" khi vế trước không phải nguyên nhân, "What is more" mà không có ý mới). Hai vế nối bằng "which", "leading to", "thereby" có thật sự là quan hệ nhân quả không.
-- **Theme–rheme:** theme là phần đầu câu, rheme là phần thông tin mới. Câu sau nên lấy rheme (hoặc theme) câu trước làm theme. Lỗi hay gặp: mở câu bằng chủ thể mới không liên quan ("Some people", "Many people"); lặp mãi một theme; dồn liên từ đầu câu thay vì nối bằng nội dung. Sửa bằng cụm nối ngắn đầu câu, sửa ít chữ nhất:
+- **Theme–rheme:** theme là phần đầu câu, rheme là phần thông tin mới. Câu sau nên lấy rheme (ưu tiên, RT) hoặc theme (TT) câu trước làm theme; mục tiêu khoảng 70% RT. Soát thêm: marked theme thừa ("Nowadays,", "In Vietnam,", "In my opinion, I agree"), reference shift (young people → a teenager/he → we → you), lặp Rheme bằng từ khác. Lỗi hay gặp: mở câu bằng chủ thể mới không liên quan ("Some people", "Many people"); lặp mãi một theme; dồn liên từ đầu câu thay vì nối bằng nội dung. Sửa bằng cụm nối ngắn đầu câu, sửa ít chữ nhất:
   - "...the influence of social media. Many people want to..." ⇒ "Through these platforms, many people want to..."
   - "...or medical care. Some people may..." ⇒ "To cover these costs, some people may..."
 - Chỉ ra cả chỗ nối tốt để em biết mà lặp lại.
-- Sau đó mới đến bố cục đoạn, topic sentence, chia đoạn, tham chiếu (this/these/such).
+- **Chính – phụ trong câu:** ý chính phải ở mệnh đề chính (câu "Unfortunately, … brings students opportunity…, which may consume…" là ngược); từ/cụm bổ nghĩa đặt sát thứ nó bổ nghĩa; "which/this" chỉ về đúng một danh từ.
+- Sau đó mới đến bố cục đoạn, topic sentence, chia đoạn, tham chiếu (this/these/such). Câu thesis tốt báo trước các thân bài bằng Rheme của nó (xem `references/thematic-progression.md` mục 5).
 
 ### Lexical Resource
 - **Sửa từ không hợp ngữ cảnh:** collocation sai ("get a loan" ⇒ "take out a loan"), sai sắc thái/register, sai nghĩa, chính tả, word form.
@@ -59,7 +67,7 @@ Trọng tâm là **logic giữa các vế câu** và **theme–rheme**:
 
 Ba lớp nhận xét, giống cách thầy vẫn làm:
 
-1. **Sửa trực tiếp trong bài (đề xuất):** lỗi LR, GRA, và các cụm nối theme–rheme. Chỉ đánh dấu đúng chữ thay đổi: đổi "get" thành "take out" thì xoá "get", chèn "take out", không thay cả câu.
+1. **Sửa trực tiếp trong bài (đề xuất):** lỗi LR, GRA, và các cụm nối theme–rheme (This/Such + danh từ, cụm nối ngắn đầu câu, bỏ marked theme thừa, thống nhất cách gọi đối tượng). Đoạn hỏng tuyến tính nặng thì **không viết lại cả đoạn trong bài**: để comment kèm dòng ý thô có mũi tên cho em tự viết lại. Chỉ đánh dấu đúng chữ thay đổi: đổi "get" thành "take out" thì xoá "get", chèn "take out", không thay cả câu.
 2. **Comment gắn vào đoạn chữ:** giải thích lỗi lớn (lập luận, lạc đề, lặp ý, paraphrase, logic giữa các vế, theme–rheme) và vì sao thầy sửa các chỗ trong bài. Đây là nơi giọng thầy thể hiện rõ nhất. Đặt comment ngay chỗ lỗi, mỗi comment một chủ đề; một bài Task 2 thường có 8–12 comment.
 3. **Ghi chú ngắn chèn trong bài (đề xuất):** một dòng riêng ngay sau đoạn liên quan, mở bằng `→` hoặc `⇒`, ví dụ `→ Em cần cân nhắc lại về kỹ năng paraphrase` hoặc `⇒ lạc đề`.
 

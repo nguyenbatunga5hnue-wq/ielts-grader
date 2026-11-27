@@ -5,7 +5,7 @@ Plugin Claude Code gộp 4 skill chấm IELTS và một agent điều phối `ie
 | Thành phần | Việc |
 |---|---|
 | `agents/ielts-grader.md` | Agent: nhận bài (Doc, Sheets, audio), tự chọn skill phù hợp, chấm hàng loạt |
-| `skills/ielts-writing-grader` | Writing Task 2: phân loại đề (Multifaceted / Comparative / Extreme), chấm 4 tiêu chí, sửa trên Google Docs ở chế độ đề xuất, ưu tiên theme–rheme |
+| `skills/ielts-writing-grader` | Writing Task 2: phân loại đề (Multifaceted / Comparative / Extreme), chấm 4 tiêu chí, sửa trên Google Docs ở chế độ đề xuất, ưu tiên tuyến tính (linearity) và theme–rheme |
 | `skills/ielts-task1-grader` | Writing Task 1: đọc biểu đồ, chấm TA, key features, diễn đạt linh hoạt |
 | `skills/ielts-ai-detector` | Nhận diện bài Writing do AI viết/sửa: số đo + so với bài cũ của học sinh, báo mức nghi ngờ riêng cho thầy |
 | `skills/ielts-speaking-analyzer` | Speaking: nghe file ghi âm, đo fluency, chunking, âm vị, chấm FC/LR/GRA/P |
@@ -43,6 +43,7 @@ Writing cần kết nối Google Docs/Drive/Sheets.
 - **Kiểm tra AI trước khi chấm writing**: tỉ lệ văn AI < 30% thì chấm bình thường; ≥ 30% thì **dừng bài đó** (không sửa, không điền điểm), báo riêng cho thầy rồi chấm người tiếp theo. Đổi ngưỡng: "ngưỡng 40%".
 - Điểm từng tiêu chí là **số nguyên** (không có .5); chỉ band tổng mới có .5.
 - Speaking: bài dưới ~30 giây chỉ cho điểm ước lượng tạm.
+- C&C theo phương pháp THIỂU của thầy (`references/linearity.md`, `references/thematic-progression.md`): nhân quả chạy qua lại, ép nối hai ý độc lập, hoặc body có câu nối đứt (N) nhiều hơn câu nối Rheme → Theme ⇒ **C&C tối đa 5**; dòng ý tuyến tính, đa số câu nối RT/TT là căn cứ cho C&C 7+.
 
 ## Dùng ở phiên sau
 
