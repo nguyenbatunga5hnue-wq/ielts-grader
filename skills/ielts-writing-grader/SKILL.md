@@ -13,11 +13,12 @@ Trước khi viết bất kỳ nhận xét nào, đọc `references/van-phong.md
 
 1. **Nạp kỹ năng Google Docs.** Nếu có skill `google-workspace`, đọc nó và `references/docs.md` của nó trước khi sửa (chỉ số UTF-16, `requiredRevisionId`, chế độ `SUGGEST`). Nạp các tool Docs `read_doc`, `update_doc` và Drive `read_file_content`.
 2. **Đọc file:** Drive `read_file_content` với `includeComments: true` để đọc bài và comment đang có; Docs `read_doc` để lấy `revisionId`, chỉ số từng đoạn, các đề xuất đang mở và danh sách tab. Bài có thể nằm ở tab không phải tab đầu: luôn ghi `tabId` vào mọi `location`/`range`.
-3. **Xác định đề và loại bài.** Đề thường in đậm/nghiêng ngay trên bài. Task 1 (biểu đồ, bảng, quy trình) chấm **TA** thay cho TR. Với Task 2, đọc `references/mindset-task2.md` và **phân loại đề**: Multifaceted (nhiều khía cạnh), Comparative (so sánh A với B) hay Extreme (nhận định tuyệt đối). Gạch keyword/thành phần của đề để soát ở bước 6. Đọc thêm `references/linearity.md` và `references/thematic-progression.md` (phương pháp tuyến tính và Theme–Rheme của khóa THIỂU) trước khi chấm TR và C&C. Một file có thể chứa nhiều bài: chấm từng bài, mỗi bài một khối điểm.
+3. **Xác định đề và loại bài.** Đề thường in đậm/nghiêng ngay trên bài. Task 1 (biểu đồ, bảng, quy trình) chấm **TA** thay cho TR. Với Task 2, đọc `references/mindset-task2.md` và **phân loại đề**: Multifaceted (nhiều khía cạnh), Comparative (so sánh A với B) hay Extreme (nhận định tuyệt đối). Gạch keyword/thành phần của đề để soát ở bước 6. Đọc thêm `references/linearity.md`, `references/thematic-progression.md` (phương pháp tuyến tính và Theme–Rheme của khóa THIỂU) và `references/band-loi-linearity-tp.md` (quy đổi lỗi sang band) trước khi chấm TR và C&C. Một file có thể chứa nhiều bài: chấm từng bài, mỗi bài một khối điểm.
 4. **Kiểm tra đã chấm chưa.** Nếu bài đã có khối điểm, comment của thầy, hoặc đề xuất sửa, đừng chấm lại từ đầu: chỉ bổ sung phần còn thiếu và báo người dùng. Chấm trùng tạo hai bộ nhận xét chồng nhau.
 5. **Soát dòng ý và chuỗi câu của từng body** (trong phần làm việc, chưa ghi vào doc):
    - **Linearity** (`references/linearity.md`): tách ý, bỏ từ nối, gộp ý trùng, bỏ ý lạc, viết ý ẩn (\*), rồi xếp thành dòng mũi tên. Đánh dấu: nhân quả chạy qua lại, ép nối hai ý độc lập, mất unity, ý chính nằm trong mệnh đề phụ.
    - **Thematic progression** (`references/thematic-progression.md`): ghi Theme từng câu, gán RT/TT/ERT/ETT/N, đếm tỉ lệ; đánh dấu 6 lỗi văn phong người Việt (marked theme thừa, theme shift, lặp Rheme, reference shift, từ nối sai, phi tuyến tính).
+   - Ghi mỗi lỗi kèm vị trí và mức độ, rồi tra `references/band-loi-linearity-tp.md` để lấy trần điểm C&C/TR. Khối điểm ghi tên lỗi chặn và cụm descriptor tương ứng.
    - Đoạn hỏng tuyến tính thì **xếp lại dòng ý trước**, đừng chữa dày từng câu: một lần xếp lại sửa được cả linking, chính – phụ, lặp ý.
 6. **Chấm theo 4 tiêu chí** (mục bên dưới), ghi chú lỗi kèm vị trí trước khi sửa.
 7. **Ghi vào file** trong một batch `update_doc` (xem "Cách ghi vào file").
@@ -27,7 +28,7 @@ Trước khi viết bất kỳ nhận xét nào, đọc `references/van-phong.md
 ## Bốn tiêu chí
 
 ### Task Response (Task 2) / Task Achievement (Task 1)
-Task 2: soát theo checklist của dạng đề trong `references/mindset-task2.md` trước. Bài bỏ sót một phần yêu cầu, quan điểm không rõ/không nhất quán, hoặc có ý không liên quan đến câu chủ đề ⇒ **TR tối đa 5**. Nói rõ trong comment và khối điểm: bài thuộc dạng nào, bị chặn vì sao.
+Task 2: soát theo checklist của dạng đề trong `references/mindset-task2.md` trước. Bài bỏ sót một phần yêu cầu, quan điểm không rõ/không nhất quán, hoặc có ý không liên quan đến câu chủ đề ⇒ **TR tối đa 5**. Lỗi dòng lập luận (ý ẩn ở luận điểm chính, ví dụ chung chung, đi lùi, lặp ý) quy đổi theo `references/band-loi-linearity-tp.md` mục 3. Nói rõ trong comment và khối điểm: bài thuộc dạng nào, bị chặn vì sao.
 
 Đánh giá lần lượt, và nói rõ từng điểm trong nhận xét:
 - **Đáp ứng yêu cầu đề chưa:** bài có trả lời đúng câu hỏi (agree/disagree, both views, causes/solutions...) không, có lạc đề không. Xác định keyword của đề và kiểm tra bài có bám keyword không. Nếu một đoạn lạc đề, ghi ngay sau đoạn đó `⇒ lạc đề` và comment giải thích vì sao.
@@ -39,7 +40,7 @@ Task 2: soát theo checklist của dạng đề trong `references/mindset-task2.
 ### Coherence & Cohesion
 Từ nối sai quan hệ hoặc dùng máy móc ("Number one/two", "Firstly/Secondly" rập khuôn), câu không rõ quan hệ, ý ngộ nhận, hoặc ý lặp/không phát triển ⇒ **C&C tối đa 5** (xem `references/mindset-task2.md`).
 
-Thêm các trường hợp chặn ở 5 từ phương pháp của thầy: nhân quả chạy qua lại (A → B → also C; A ← B → C; nguyên nhân – kết quả – nguyên nhân), ép nối hai ý độc lập bằng một liên từ tiện tay, hoặc một body mà câu nối đứt (N) nhiều hơn câu nối RT. Bảng quy đổi đầy đủ: `references/linearity.md` mục 9 và `references/thematic-progression.md` mục 7. Ngược lại, dòng ý tuyến tính, đọc một lần là hiểu, đa số câu nối RT/TT thì là căn cứ cho C&C 7+, kể cả khi từ vựng đơn giản (thầy: "thà cho điểm cao bài từ vựng đơn giản mà đọc đến đâu hiểu đến đó").
+Lỗi tuyến tính và Theme–Rheme quy đổi sang band theo **`references/band-loi-linearity-tp.md`** (bảng lỗi → trần điểm, mỗi mức gắn câu chữ descriptor chính thức). Ví dụ: nhân quả chạy vòng trong một câu ⇒ trần 6 (*cohesion within sentences may be faulty*); ở dòng lập luận chính của một body ⇒ trần 5 (*not wholly logical*); body có câu nối đứt (N) nhiều hơn câu nối RT ⇒ trần 5 (*sentences are not fluently linked*). Lấy trần thấp nhất, rồi đối chiếu đặc điểm tích cực của band. Dòng ý tuyến tính, đa số câu nối RT/TT là căn cứ cho C&C 7+, kể cả khi từ vựng đơn giản (thầy: "thà cho điểm cao bài từ vựng đơn giản mà đọc đến đâu hiểu đến đó").
 
 Trọng tâm là **tuyến tính**, **logic giữa các vế câu** và **theme–rheme**:
 - **Tuyến tính:** nhân quả đi một chiều; nhiều nguyên nhân thì gom một chỗ, hậu quả một chỗ, hậu quả bao trùm đứng cuối; lý do liên kết thì không tách nhánh; "A also B" thì A quan trọng hơn; mỗi đoạn một ý chính (unity), hai ý độc lập thì tách đoạn.

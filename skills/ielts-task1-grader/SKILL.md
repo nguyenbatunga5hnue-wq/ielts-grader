@@ -65,7 +65,7 @@ Thầy muốn em **hiểu biểu đồ nói gì** rồi mới viết, chứ khô
 ### Coherence & Cohesion
 - **Cách chia đoạn và gộp nhóm:** intro, overview, 2 đoạn thân bài chia theo logic (theo nhóm, theo giai đoạn, theo xu hướng giống nhau). Chia đoạn theo từng đối tượng một khi chúng có xu hướng giống nhau là chưa tối ưu.
 - **Logic giữa các vế câu và theme–rheme** như Task 2: liên từ đúng quan hệ ("while/whereas" để đối lập, "as a result" chỉ khi có quan hệ nhân quả thật trong số liệu); câu sau lấy lại thông tin câu trước (RT, xem `references/thematic-progression.md`).
-- **Tuyến tính** (`references/linearity.md`): nhóm dữ liệu theo một tiêu chí rõ (subgrouping), đi có trật tự (process theo đúng từng bước; map từ một điểm mốc đi lần lượt như thầy dạy "mô tả căn phòng thì đi từ cửa, sang trái, sang phải"), không quay lại số liệu đã tả. Thấy gì tả nấy là lỗi C&C.
+- **Tuyến tính** (`references/linearity.md`): nhóm dữ liệu theo một tiêu chí rõ (subgrouping), đi có trật tự (process theo đúng từng bước; map từ một điểm mốc đi lần lượt như thầy dạy "mô tả căn phòng thì đi từ cửa, sang trái, sang phải"), không quay lại số liệu đã tả. Thấy gì tả nấy là lỗi C&C. Trần điểm C&C cho từng lỗi: `references/band-loi-linearity-tp.md` mục 2 và 5.
 - **Tham chiếu:** "the former / the latter", "this figure", "the same period" thay cho lặp tên đối tượng.
 
 ### Lexical Resource

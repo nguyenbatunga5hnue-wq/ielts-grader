@@ -63,7 +63,6 @@ Trọng tâm từng tiêu chí:
    - Độ trôi: speech rate, số lần ngừng, ngừng dài, MLR, lặp/tự sửa.
    - **Ngừng vì gì**: tìm ý (ở ranh giới, band 8–9 chấp nhận) hay tìm từ/ngữ pháp (giữa câu, band 5–7).
    - Mạch lạc: câu trả lời có trả lời đúng câu hỏi không, có phát triển (lý do, ví dụ) không, độ dài so với Part.
-   - Tuyến tính (phương pháp linearity, `skills/ielts-writing-grader/references/linearity.md` mục 8): lý do có xếp trước khi nói không, hay nghĩ ra gì nói nấy, lặp ý đã nói, nhảy từ kết quả về nguyên nhân. Gợi ý cho con: trả lời một câu Part 1/3 thì đi một chiều (ý chính → lý do → ví dụ), không vòng lại.
    - Discourse markers và liên từ: đa dạng và đúng (7), có nhưng chưa luôn đúng (6), lạm dụng vài từ (5).
 2. **Lexical Resource** (từ transcript):
    - Sửa từ dùng **không hợp ngữ cảnh** hoặc sai collocation, và đề xuất từ hay hơn, tự nhiên trong văn **nói** (idiomatic, less common items). Đừng đề xuất từ văn viết học thuật.

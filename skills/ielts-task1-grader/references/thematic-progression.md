@@ -73,14 +73,7 @@ Khi chấm, lập nhanh bảng **Theme – kiểu nối** cho mỗi body (ghi tr
 
 ## 7. Áp vào chấm C&C
 
-| Phát hiện | Ảnh hưởng |
-|---|---|
-| Phần lớn câu là N (unmotivated), RT ít hơn N trong một body | "lack of progression", "inadequate… cohesion" ⇒ **C&C tối đa 5** |
-| Từ nối sai quan hệ (lỗi 5) | **C&C tối đa 5** (quy tắc chung, `mindset-task2.md` (skill ielts-writing-grader)) |
-| Lặp Rheme (lỗi 3) lặp lại nhiều lần | ý lặp, không phát triển ⇒ **C&C tối đa 5** |
-| Reference shift (lỗi 4) | "referencing… may be faulty/inaccurate" ⇒ thường C&C 5–6 |
-| Marked theme thừa, Theme shift lẻ tẻ (lỗi 1, 2) | trừ trong band 6; nêu trong comment và đề xuất cụm nối |
-| Đa số RT/TT, tham chiếu this/such chính xác, từ nối ít mà đúng | "cohesion managed well/skilfully" ⇒ căn cứ cho **C&C 7–8** |
+Chỉ áp dụng cho **Writing**. Quy đổi từng lỗi (tỉ lệ RT/TT so với N, marked theme thừa, theme shift, lặp Rheme, reference shift, từ nối sai quan hệ hoặc máy móc) sang band theo descriptor chính thức: xem `references/band-loi-linearity-tp.md` mục 2.
 
 ## 8. Cách sửa và comment trong doc
 

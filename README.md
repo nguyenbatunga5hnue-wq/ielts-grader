@@ -43,7 +43,7 @@ Writing cần kết nối Google Docs/Drive/Sheets.
 - **Kiểm tra AI trước khi chấm writing**: tỉ lệ văn AI < 30% thì chấm bình thường; ≥ 30% thì **dừng bài đó** (không sửa, không điền điểm), báo riêng cho thầy rồi chấm người tiếp theo. Đổi ngưỡng: "ngưỡng 40%".
 - Điểm từng tiêu chí là **số nguyên** (không có .5); chỉ band tổng mới có .5.
 - Speaking: bài dưới ~30 giây chỉ cho điểm ước lượng tạm.
-- C&C theo phương pháp THIỂU của thầy (`references/linearity.md`, `references/thematic-progression.md`): nhân quả chạy qua lại, ép nối hai ý độc lập, hoặc body có câu nối đứt (N) nhiều hơn câu nối Rheme → Theme ⇒ **C&C tối đa 5**; dòng ý tuyến tính, đa số câu nối RT/TT là căn cứ cho C&C 7+.
+- Writing: lỗi tuyến tính và Theme–Rheme (phương pháp THIỂU, `references/linearity.md`, `references/thematic-progression.md`) quy đổi sang band C&C/TR theo descriptor chính thức trong `references/band-loi-linearity-tp.md` (lỗi → trần điểm, lấy trần thấp nhất). Không áp dụng cho Speaking.
 
 ## Dùng ở phiên sau
 

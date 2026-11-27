@@ -92,22 +92,11 @@ Thứ tự thời gian và thứ tự quan trọng có thể khác nhau. Dung h�
 
 - Lối **song song, đối xứng** (thơ "Nếu một ngày…": hai khổ, chỉ một ý) ⇒ gộp các vế song song chỉ có một ý.
 - Văn mẫu, vọng cổ: ý đặt cạnh nhau, ý ẩn không nói ra ⇒ xếp lại thành một dòng, nói rõ ý ẩn mà người nước ngoài cần được nghe.
-- "Thấy gì nói nấy": mô tả, kể, liệt kê theo thứ tự nghĩ ra. Áp dụng cả cho **Speaking**: lập danh sách lý do trong đầu rồi xếp trước khi nói; phản xạ của người Việt là nghĩ ra gì nói nấy, lặp ý đã nói, quên ý cần nói (mẹo phỏng vấn của thầy).
+- "Thấy gì nói nấy": mô tả, kể, liệt kê theo thứ tự nghĩ ra, lặp ý đã nói, quên ý cần nói. Viết thì lập danh sách ý rồi xếp trước khi viết (Task 1: mô tả map, process đi có trật tự từ một điểm mốc).
 
 ## 9. Áp vào chấm điểm
 
-| Phát hiện | Tiêu chí bị ảnh hưởng | Mức |
-|---|---|---|
-| Nhân quả chạy qua lại (mục 3), từ 1 lần trong một body | C&C | lỗi "ý thiếu logic" ⇒ **C&C tối đa 5** (`mindset-task2.md`) |
-| Ép nối hai ý độc lập bằng một liên từ tiện tay (mục 5) | C&C | từ nối sai quan hệ ⇒ **C&C tối đa 5** |
-| Ý trùng "same idea, different wording" không phát triển | C&C | ý lặp ⇒ **C&C tối đa 5** |
-| Chỗ gãy lớn (ý ẩn) khiến người đọc phải đoán | C&C (và TR nếu lập luận chính không đứng được) | 1–2 chỗ nhỏ: trừ trong descriptor 6–7; gãy ở luận điểm chính: tối đa 5 |
-| Ý lạc hướng, ý không "component-integral" | TR | ý không liên quan ⇒ **TR tối đa 5** |
-| Hai ý chính ép vào một đoạn (mất unity) | C&C | "paragraphing… not always logical" (band 5–6) |
-| Ý chính nằm trong mệnh đề phụ, ý phụ chiếm mệnh đề chính | C&C và GRA | không chặn; nêu trong nhận xét, gợi ý câu chính – phụ |
-| Dòng ý tuyến tính, đọc một lần là hiểu | C&C | "logically organises information… clear progression" (band 7+), kể cả khi từ vựng đơn giản |
-
-Dòng ý tuyến tính tốt là căn cứ để cho C&C 7 trở lên; các chặn ở trên vẫn áp dụng như quy tắc chung trong `mindset-task2.md`.
+Phương pháp này áp dụng cho **Writing** (Task 2 là chính; Task 1 dùng cho C&C). Mỗi lỗi ở trên được quy đổi sang band theo descriptor chính thức trong `references/band-loi-linearity-tp.md`: tra mức độ của lỗi, lấy trần thấp nhất, rồi đối chiếu đặc điểm tích cực của band. Dòng ý tuyến tính, đọc một lần là hiểu, là căn cứ cho C&C 7+ kể cả khi từ vựng đơn giản.
 
 ## 10. Viết comment về tuyến tính (theo giọng thầy)
 
