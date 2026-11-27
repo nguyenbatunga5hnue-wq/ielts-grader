@@ -47,6 +47,8 @@ Writing cần kết nối Google Docs/Drive/Sheets.
 
 ## Dùng ở phiên sau
 
+- **Cách nhanh nhất:** mở phiên Claude Code (máy tính hoặc claude.ai/code) **với repo này**. Skill gộp `ielts-grader` nằm ở `.claude/skills/ielts-grader/` nên được nạp tự động, không cần cài plugin. Đây là cùng bản với skill `ielts-grader` trên claude.ai (Writing Task 1/2 có linearity, theme–rheme, bảng quy đổi lỗi sang band; Speaking; kiểm tra AI; chấm hàng loạt).
+
 - **Claude Code trên máy tính**: cài plugin một lần bằng 2 lệnh ở trên; các phiên sau tự có.
 - **Claude Code trên web (claude.ai/code)**: mở phiên mới với repo này, rồi cài plugin bằng 2 lệnh ở trên (môi trường cloud là tạm thời, mỗi phiên mới cần cài lại). Speaking cần chạy thêm `setup.sh`.
 - Cập nhật bản mới: `/plugin marketplace update ielts-grader`.
